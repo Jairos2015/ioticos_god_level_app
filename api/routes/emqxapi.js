@@ -141,7 +141,7 @@ async function createResources() {
         setTimeout(() => {
             console.log("***** Emqx WH resources created! :) *****".green);
             listResources();
-        }, 1000);
+        }, EMQX_RESOURCES_DELAY);
     } catch (error) {
         console.log("Error creating resources");
         console.log(error);
